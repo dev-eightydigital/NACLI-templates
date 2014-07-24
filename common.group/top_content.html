@@ -10,11 +10,12 @@ switch($top_content){
 		</div>
 	<?php break; 
 	
-	case 'page_title': ?>
-		<h2>{embed:page_title}</h2>
+	case 'page_title':
+	case 'breadcrumb': ?>
+		{if embed:page_title != ''}<h2>{embed:page_title}</h2>{/if}
 		<ol class="breadcrumb">
 		  <li><a href="{site_url}" title="Home">Home</a></li>
-		  <li class="active"> Feedback </li>
+		  <li class="active"> {embed:current_page} </li>
 		</ol>
 	<?php break; ?>
 	
