@@ -1,7 +1,25 @@
 <div class="top-content"> <!-- banner - title - breadcrumb -->
   <div class="container">
-	<div class="col-md-10 center-block">
-	  <img src="{embed:imgsrc}" width="{embed:imgwidth}" height="{embed:imgheight}" alt="{embed:imgalt}" class="img-responsive">
-	</div>
+
+<?php $top_content = "{embed:top_content}"; 
+
+switch($top_content){ 
+	case 'img':?>
+		<div class="col-md-10 center-block">
+		  <img src="{embed:imgsrc}" width="{embed:imgwidth}" height="{embed:imgheight}" alt="{embed:imgalt}" class="img-responsive">
+		</div>
+	<?php break; 
+	
+	case 'page_title': ?>
+		<h2>{embed:page_title}</h2>
+		<ol class="breadcrumb">
+		  <li><a href="{site_url}" title="Home">Home</a></li>
+		  <li class="active"> Feedback </li>
+		</ol>
+	<?php break; ?>
+	
+	<?php default: break; ?>
+	
+<?php } ?>
   </div>
 </div>	<!--/ .banner - title - breadcrumb -->
