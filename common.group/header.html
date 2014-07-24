@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		{if embed:is_home=='true'}
+		Home |
+		{/if}
+		{site_name}
+	</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:image" content="">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- Style -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{site_url}common/css/style.css" type="text/css" media="screen"  />
+	<link rel="stylesheet" href="{site_url}common/css/bootstrap.css" type="text/css" media="screen"  />
+	<link rel="stylesheet" type="text/css" href="{site_url}common/css/jquery.lightbox.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="{site_url}common/js/jquery.lightbox.min.js"></script>
+	<script type="text/javascript" src="{site_url}common/js/jquery-hotspotter-1.7.6.js"></script>
+	<script type="text/javascript" src="{site_url}common/js/vallenato.js"></script>
+	<script type="text/javascript" src="{site_url}common/js/bootstrap.js"></script>
+	<script type="text/javascript" src="{site_url}common/js/menu.js"></script>
+	<script type="text/javascript" src="{site_url}common/js/scrolltopcontrol.js"></script>
+	<script type="text/javascript" src="{site_url}common/js/global-control.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="outer-wrap">
+		<div class="container header"> <!-- header container -->
+			<div class="row">
+				<div class="col-xs-3 col-md-2 logo"><h1><a href="http://www.nacli.pa.gov.sg" title="NACLI"><img src="{site_url}common/images/NACLI-logo.png" alt="NACLI - National Community Leadership Institute" width="134" height="60" class="img-responsive"/></a></h1></div>
+				<div class="col-xs-1 col-md-1 banner-logo"><img src="{site_url}common/images/50-years.png" alt="50 Years" width="92" height="87" class="img-responsive"/></div>
+				<div class="col-md-8 top-right">
+					<div class="sg-gov"><a href="http://www.gov.sg" target="_blank" title="Singapore Government"> <img src="{site_url}common/images/sggov.png" alt="Singapore Government" width="220" height="32" class="img-responsive"/> </a></div>
+					<div class="top-links">
+						<ul>
+							<li><a href="contact.html" title="Contact">Contact Info</a></li>
+							<li><a href="feedback.html" title="Feedback">Feedback</a></li>
+							<li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
+						</ul>
+					</div>
+				</div><!-- top right links -->
+			</div>
+		</div><!--/ .header container -->
+
+		<div class="main-nav">
+			<div class="container"> <!-- nav container -->
+					<!-- Static navbar -->
+					  <div class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <a class="navbar-brand" href="{site_url}">Home</a>
+						</div>
+						<div class="navbar-collapse collapse">
+							<script type="text/javascript">document.write(menu(''));</script>
+						</div><!--/.nav-collapse -->
+					  </div>
+			</div><!--/.nav container -->
+			<div class="sub-nav"> <!-- second nav -->
+				<div class="container">
+						<script type="text/javascript">document.write(SecondNav(''));</script>
+				</div>
+			</div><!--/ .second nav -->
+		</div>
