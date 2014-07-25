@@ -15,8 +15,15 @@ switch($top_content){
 		{if embed:page_title != ''}<h2>{embed:page_title}</h2>{/if}
 		<ol class="breadcrumb">
 		  <li><a href="{site_url}" title="Home">Home</a></li>
-		  <li class="active"> {embed:current_page} </li>
+		  {if embed:parent_page != ''}
+		  <li><a href="{embed:parent_page_link}" title="{embed:parent_page}">{embed:parent_page}</a></li>
+		  {/if}
+		  <li class="active">{embed:current_page}</li>
 		</ol>
+	<?php break; 
+
+	case 'text':?>
+		<div class="top-description"><span>{embed:text}</span></div>
 	<?php break; ?>
 	
 	<?php default: break; ?>

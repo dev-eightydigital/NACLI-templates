@@ -26,6 +26,20 @@
 	<script type="text/javascript" src="{site_url}common/js/vallenato.js"></script>
 	<script type="text/javascript" src="{site_url}common/js/bootstrap.js"></script>
 	<script type="text/javascript" src="{site_url}common/js/menu.js"></script>
+	
+	
+	{if embed:current_page=='Milestones'}
+	<script>var custom_dir = "{site_url}common/";</script>
+	<script type="text/javascript" src="{site_url}common/plugins/TimelineJS-master/compiled/js/storyjs-embed.js"></script>
+	<script type="text/javascript" src="{site_url}common/plugins/TimelineJS-master/compiled/js/scripts.js"></script>
+
+	<script type="text/javascript" src="{site_url}common/js/jquery.timelinr-0.9.54.js"></script>
+	<link rel="stylesheet" type="text/css" href="{site_url}common/css/style-timelineie7.css" />
+	
+	<script type="text/javascript" src="{site_url}common/plugins/jquery.jcarousel.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{site_url}common/css/jcarousel.basic.css" />
+	{/if}
+	
 	<script type="text/javascript" src="{site_url}common/js/scrolltopcontrol.js"></script>
 	<script type="text/javascript" src="{site_url}common/js/global-control.js"></script>
 	
@@ -68,6 +82,9 @@
 						  <a class="navbar-brand" href="{site_url}">Home</a>
 						</div>
 						<div class="navbar-collapse collapse">
+							<script type="text/javascript">
+								var aboutusUrl = "{path='aboutus/index'}";
+							</script>
 							<script type="text/javascript">document.write(menu(''));</script>
 						</div><!--/.nav-collapse -->
 					  </div>
